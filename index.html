@@ -11,16 +11,36 @@
             color: gold;
         }
         a{
-            color: gray;
+            color: black;
         }
         a:hover{
             color: black;
         }
+        @media (max-width :575.98px){
+            #intro div img{
+                width: 100%;
+                height: 250px;
+            }
+        }
+        /* @media (max-width :767.98px){
+            #intro div img{
+                width: 100%;
+                height: 250px;
+            }
+        } */
+        /* #intro div img{
+            width: 100%;
+            height: 600px;
+        } */
+        #tokoonline i{
+            color: blue;
+        }
+        body{
+            background-color: rgb(230, 224, 224);
+        }
     </style>
 </head>
 <body>
-    
-    
     
     <!-- HEADER SECTION -->
     <header>
@@ -28,27 +48,27 @@
         <div class="container">
             <div class="row">
                 <!-- Logo -->
-                <div class="col-1">
+                <div class="col-lg-1 col-1 col-sm-1">
                     <img src="asset/images/logo.jpg" alt="Ini Logo" width="48" height="68">
-                </div>
+                </div>  
                 <!-- Search Bar -->
-                <div class="col-7">
+                <div class="col-lg-7 col-11 col-11">
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2 w-75" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-dark my-2 my-sm-3" type="submit"><i class="fab fa-searchengin"></i></button>
                     </form>
                 </div>
                 <!-- Account -->
-                <div class="col-4">
+                <div class="col-lg-4">
                     <div class="container">
                         <div class="row">
                             <!-- Icon Account -->
-                            <div class="col-6">
+                            <div class="col-lg-6 col-6 col-sm-10">
                                 <i class="fas fa-shopping-cart mt-3" style="font-size: 2.5em;"></i>
                                 <i class="fas fa-user-circle mt-3 ml-4" style="font-size: 2.5em;"></i>
                             </div>
                             <!-- Icon Register -->
-                            <div class="col-6 p-0 mt-2">
+                            <div class="col-lg-6 col-6 col-sm-2 p-0 mt-2">
                                 <p class="text-muted m-0">Welcome!</p>
                                 <span>
                                     <a href="#" class="float-left">Sig In</a>
@@ -74,27 +94,33 @@
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fas fa-bars"></i>
+                                        <i class="fas fa-bars d-none d-md-none d-sm-inline"></i>
                                         Semua Kategori
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Bola Sepak</a>
-                                        <a class="dropdown-item" href="#">Raket Bulu Tangkis</a>
+                                        <a class="dropdown-item" href="#bolasepak">Bola Sepak</a>
+                                        <a class="dropdown-item" href="#raket">Raket Bulu Tangkis</a>
+                                        <a class="dropdown-item" href="#bolabasket">Bola Basket</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Toko Online</a>
+                                        <a class="dropdown-item" href="#tokoonline">Toko Online</a>
                                     </div>
                                     <li class="nav-item">
-                                        <a class="nav-link"href="#">
+                                        <a class="nav-link"href="#bolasepak">
                                             Bola Sepak
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link">
+                                        <a href="#raket" class="nav-link">
                                             Raket Bulutangkis
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="" class="nav-link">
+                                        <a href="#bolabasket" class="nav-link">
+                                            Bola Basket
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#tokoonline" class="nav-link">
                                             Toko Online
                                         </a>
                                     </li>
@@ -106,14 +132,15 @@
             </div>
         </div>
         
-    </header>
+    </header>  
+    
+
     
     <!-- Intro Section -->
     <section id="intro" class="container p-0">
         <div class="col-12">
-            <img src="asset/images/bg1.jpg" alt="" class="w-100" style="height: 700px;">
+            <img src="asset/images/bg1.jpg" alt="" class="w-100 h-25">
         </div>
-    </section>
     
     
     <!-- Services Section -->
@@ -122,17 +149,17 @@
             <div class="card-body">
                 <div class="container">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-4">
                             <i class="fas fa-award fa-3x" style="color: silver;"></i>
                             <h3 class="h5 mt-3">Di Jamin Kasiliannya</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt, voluptates rem corrupti necessitatibus at sit sapiente optio error, atque fugiat cupiditate quos. Corrupti velit rem repellendus nihil minus placeat?</p>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-4">
                             <i class="fas fa-landmark fa-3x" style="color: silver;"></i>
                             <h3 class="h5 mt-3">Tabungan Emas</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor illo alias amet ad quae temporibus officia laboriosam officiis ipsam doloribus vitae in nostrum enim corporis quasi aperiam, sint cupiditate eius!</p>
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-sm-4">
                             <i class="fas fa-lock fa-3x" style="color: silver;"></i>
                             <h3>Cicilan Kredit</h3>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium quae quod vitae laboriosam nemo! Ducimus, placeat! Molestiae quo aperiam officiis id voluptatibus, illum iusto dolores pariatur natus a! Esse, exercitationem?
@@ -144,16 +171,17 @@
     </section>
     
     <!-- populer selection -->
-    <selection class="container">
+    <selection class="container" id="bolasepak">
         <div class="card-body">
             <div class="container">
                 <h3>Bola Sepak</h3>
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-lg-3 col-sm-6">
                         <div class="card">
                             <a href="#"><img src="asset/images/bola1.jpg" alt="bola_1" class="img-fluid"></a>
                             <div class="card-body">
-                                <a href="#">Bola OrtusEight</a>
+                                <a class="col-10" href="#">Bola OrtusEight</i></a>
+                                <i class="fas fa-heart col-2"></i>
                                 <div class="rating mt-3">
                                     <ul class="list-inline" style="float: left;">
                                         <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
@@ -166,13 +194,13 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="harga">
-                                    <button type="button" class="btn btn-link btn-block border-0" disabled>Rp 1.199.000</button>
+                                    <button type="button" class="btn btn-link btn-block border-0" disabled>Rp -</button>
                                     <button class="btn btn-secondary btn-block" type="button">Beli</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-sm-6">
                         <div class="card">
                             <a href="#"><img src="asset/images/bola2.jpg" alt="bola_1" class="img-fluid"></a>
                             <div class="card-body">
@@ -189,13 +217,13 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="harga">
-                                    <button type="button" class="btn btn-link btn-block border-0" disabled>Rp 1.499.000</button>
+                                    <button type="button" class="btn btn-link btn-block border-0" disabled>Rp -</button>
                                     <button class="btn btn-secondary btn-block" type="button">Beli</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-sm-6">
                         <div class="card">
                             <a href="#"><img src="asset/images/bola5.jpg" alt="bola_1" class="img-fluid"></a>
                             <div class="card-body">
@@ -212,17 +240,18 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="harga">
-                                    <button type="button" class="btn btn-link btn-block border-0" disabled>Rp 999.000</button>
+                                    <button type="button" class="btn btn-link btn-block border-0" disabled>Rp -</button>
                                     <button class="btn btn-secondary btn-block" type="button">Beli</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-sm-6">
                         <div class="card">
                             <a href="#"><img src="asset/images/bola4.jpg" alt="bola_1" class="img-fluid"></a>
                             <div class="card-body">
-                                <a href="#">Bola Nike</a>
+                                <a class="col-10" href="#">Bola Nike</a>
+                                <i class="fas fa-heart col-2"></i>
                                 <div class="rating mt-3">
                                     <ul class="list-inline" style="float: left;">
                                         <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
@@ -235,7 +264,7 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="harga">
-                                    <button type="button" class="btn btn-link btn-block border-0" disabled>Rp 1.450.000</button>
+                                    <button type="button" class="btn btn-link btn-block border-0" disabled>Rp -</button>
                                     <button class="btn btn-secondary btn-block" type="button">Beli</button>
                                 </div>
                             </div>
@@ -248,12 +277,12 @@
     
     <!-- Arival Section -->
     
-    <selection class="container">
+    <selection class="container" id="raket">
         <div class="card-body">
             <div class="container">
                 <h3>Raket Bulu Tangkis</h3>
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-lg-3 col-sm-6">
                         <div class="card">
                             <a href="#"><img src="asset/images/bulutangkis1.jpg" alt="bola_1" class="img-fluid"></a>
                             <div class="card-body">
@@ -270,17 +299,18 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="harga">
-                                    <button type="button" class="btn btn-link btn-block border-0" disabled>Rp 530.000</button>
+                                    <button type="button" class="btn btn-link btn-block border-0" disabled>Rp -</button>
                                     <button class="btn btn-secondary btn-block" type="button">Beli</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-sm-6">
                         <div class="card">
                             <a href="#"><img src="asset/images/bulutangkis2.jpg" alt="bola_1" class="img-fluid"></a>
                             <div class="card-body">
-                                <a href="#">Raket</a>
+                                <a class="col-10" href="#">Raket</a>
+                                <i class="fas fa-heart col-2"></i>
                                 <div class="rating mt-3">
                                     <ul class="list-inline" style="float: left;">
                                         <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
@@ -293,13 +323,13 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="harga">
-                                    <button type="button" class="btn btn-link btn-block border-0" disabled>Rp 780.000</button>
+                                    <button type="button" class="btn btn-link btn-block border-0" disabled>Rp -</button>
                                     <button class="btn btn-secondary btn-block" type="button">Beli</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-sm-6">
                         <div class="card">
                             <a href="#"><img src="asset/images/bulutangkis3.jpg" alt="bola_1" class="img-fluid"></a>
                             <div class="card-body">
@@ -316,18 +346,19 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="harga">
-                                    <button type="button" class="btn btn-link btn-block border-0" disabled>Rp 999.000</button>
+                                    <button type="button" class="btn btn-link btn-block border-0" disabled>Rp -</button>
                                     <button class="btn btn-secondary btn-block" type="button">Beli</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-sm-6">
                         <div class="card">
                             <a href="#"><img src="asset/images/bulutangkis4.jpg" alt="bola_1" class="img-fluid"></a>
                             <div class="card-body">
-                                <a href="#">Raket</a>
-                                <div class="rating mt-3">
+                                <a class="col-10" href="#">Raket</a>
+                                <i class="fas fa-heart col-2"></i>
+                                <div class="rating mt-3 text-center">
                                     <ul class="list-inline" style="float: left;">
                                         <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
                                         <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
@@ -339,7 +370,7 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="harga">
-                                    <button type="button" class="btn btn-outline-dark border-0" disabled>Rp 899.999</button>
+                                    <button type="button" class="btn btn-outline-dark border-0" disabled>Rp -</button>
                                     <button class="btn btn-danger btn-block" type="button" disabled>Stock Habis</button>
                                 </div>
                             </div>
@@ -350,41 +381,152 @@
         </div>
     </selection>
     
+    <!-- Arival Section 2 -->
+
+    
+    <selection class="container" id="bolabasket">
+        <div class="card-body">
+            <div class="container">
+                <h3>Bola Basket</h3>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="asset/images/basket1.jpg" alt="bola_1" class="img-fluid"></a>
+                            <div class="card-body">
+                                <a href="#">Bola Basket</a>
+                                <div class="rating mt-3">
+                                    <ul class="list-inline" style="float: left;">
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0" ><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <span class="pl-3 text-muted float-left">543 Terjual</span>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="harga">
+                                    <button type="button" class="btn btn-link btn-block border-0" disabled>Rp -</button>
+                                    <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="asset/images/basket2.jpg" alt="bola_1" class="img-fluid"></a>
+                            <div class="card-body">
+                                <a class="col-10" href="#">Raket</a>
+                                <i class="fas fa-heart col-2"></i>
+                                <div class="rating mt-3">
+                                    <ul class="list-inline" style="float: left;">
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0" ><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <span class="pl-3 text-muted float-left">263 Terjual</span>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="harga">
+                                    <button type="button" class="btn btn-link btn-block border-0" disabled>Rp -</button>
+                                    <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="asset/images/basket3.jpg" alt="bola_1" class="img-fluid"></a>
+                            <div class="card-body">
+                                <a href="#">Raket</a>
+                                <div class="rating mt-3">
+                                    <ul class="list-inline" style="float: left;">
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0" ><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <span class="pl-3 text-muted float-left">112 Terjual</span>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="harga">
+                                    <button type="button" class="btn btn-link btn-block border-0" disabled>Rp -</button>
+                                    <button class="btn btn-secondary btn-block" type="button">Beli</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="asset/images/basket4.jpg" alt="bola_1" class="img-fluid"></a>
+                            <div class="card-body">
+                                <a class="col-10" href="#">Raket</a>
+                                <i class="fas fa-heart col-2"></i>
+                                <div class="rating mt-3 text-center">
+                                    <ul class="list-inline" style="float: left;">
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item mr-0" ><i class="fas fa-star"></i></li>
+                                    </ul>
+                                    <span class="pl-3 text-muted float-left">345 Terjual</span>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="harga">
+                                    <button type="button" class="btn btn-outline-dark border-0" disabled>Rp -</button>
+                                    <button class="btn btn-danger btn-block" type="button" disabled>Stock Habis</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </selection>
+    
+
+
+
+
     <!-- Partner Section -->
-    <section class="container mt-2">
+    <section class="container mt-2" id="tokoonline">
         <h3>Mitra Kami</h3>
         <div class="row">
-            <div class="col-2">
+            <div class="col-lg-2 col-6 col-sm-4">
                 <figure class="figure">
                     <img src="asset/images/toko1.jpg" class="figure-img img-thumbnail rounded" alt="...">
                     <figcaption class="figure-caption text-center">Shopee <i class="fas fa-check"></i></figcaption>
                 </figure>
             </div>
-            <div class="col-2">
+            <div class="col-lg-2 col-6 col-sm-4">
                 <figure class="figure">
                     <img src="asset/images/toko2.jpg" class="figure-img img-thumbnail rounded" alt="...">
                     <figcaption class="figure-caption text-center">Tokopedia <i class="fas fa-check"></i></figcaption>
                 </figure>
             </div>
-            <div class="col-2">
+            <div class="col-lg-2 col-6  col-sm-4">
                 <figure class="figure">
                     <img src="asset/images/toko3.jpg" class="figure-img img-thumbnail rounded" alt="...">
                     <figcaption class="figure-caption text-center">Buka Lapak <i class="fas fa-check"></i></figcaption>
                 </figure>
             </div>
-            <div class="col-2">
+            <div class="col-lg-2 col-6  col-sm-4">
                 <figure class="figure">
                     <img src="asset/images/toko4.jpg" class="figure-img img-thumbnail rounded" alt="...">
                     <figcaption class="figure-caption text-center">JD.id <i class="fas fa-check"></i></figcaption>
                 </figure>
             </div>
-            <div class="col-2">
+            <div class="col-lg-2 col-6  col-sm-4">
                 <figure class="figure">
                     <img src="asset/images/toko5.jpg" class="figure-img img-thumbnail rounded" alt="...">
                     <figcaption class="figure-caption text-center">Alibaba <i class="fas fa-check"></i></figcaption>
                 </figure>
             </div>
-            <div class="col-2">
+            <div class="col-lg-2 col-6  col-sm-4">
                 <figure class="figure">
                     <img src="asset/images/toko16.jpg" class="figure-img img-thumbnail rounded" alt="...">
                     <figcaption class="figure-caption text-center">SantosaSport</figcaption>
@@ -397,7 +539,7 @@
     <section class="container mt-3">
         <h3>Download Aplikasi</h3>
         <div class="row">
-            <div class="col-12">
+            <div class="col-lg-12 col-sm-3">
                 <a href="#"><img src="asset/images/play.jpg" alt="aaaa" height="125"></a>
             </div>
         </div>
@@ -405,8 +547,8 @@
     
     <!-- Footer Section -->
     <section class="container">
-        <div class="row">
-            <div class="col-3">
+        <div class="row bg-secondary">
+            <div class="col-lg-3 col-sm-6">
                 <h5>Perusahaan</h5>
                 <ul class="list-unstyled">
                     <li><a href="#">Tentang Kami</a></li>
@@ -414,7 +556,7 @@
                     <li><a href="#">Syarat &amp; Ketentuan</a></li>
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-sm-6">
                 <h5>Bantuan</h5>
                 <ul class="list-unstyled">
                     <li><a href="#">Kontak</a></li>
@@ -422,7 +564,7 @@
                     <li><a href="#">Info Kredit</a></li>
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-sm-6">
                 <h5>Akun</h5>
                 <ul class="list-unstyled">
                     <li><a href="#">Akun Pengguna</a></li>
@@ -430,7 +572,7 @@
                     <li><a href="#">Pengaturan</a></li>
                 </ul>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-sm-6">
                 <h5>Sosial Media</h5>
                 <ul class="list-unstyled">
                     <li><a href="#"> <i class="fab fa-whatsapp text-dark"></i>      :   WhatSapp</a></li>
@@ -439,32 +581,36 @@
                     <li><a href="#"> <i class="fab fa-instagram text-dark"></i>       :   Instragram</a></li>
                 </ul>
             </div>
+            
         </div>
+
     </section>
-    <section class="container mt-3">
+    <section>
+    <div class="container mt-3">
         <div class="row">
-            <div class="col-3">
+            <div class="col-lg-3 col-sm-12">
                 <p>&copy;2020 Toko Alat Olahraga</p>
             </div>
-            <div class="col-7">
+            <div class="col-lg-7 col-sm-10">
                 <ul class="list-inline">
                     <li class="list-inline-item">Info@TokoOlgaJepara</li>
                     <li class="list-inline-item">09876543211234</li>
                     <li class="list-inline-item">Jalan Raya Bangsri-Melonggo</li>
                 </ul>
             </div>
-            <div class="col-2">
+            <div class="col-lg-2 col-sm-2">
                 <i class="fab fa-cc-visa"></i>
                 <i class="fab fa-cc-paypal"></i>
                 <i class="fab fa-cc-mastercard"></i>
             </div>
         </div>
-</section>
-
-
-<!-- <script src="asset/css/js/jquery-3.5.1.slim.min.js"></script> -->
-<script src="asset/css/js/jquery.js"></script>
-<script src="asset/css/js/popper.min.js"></script>
-<script src="asset/css/js/bootstrap.min.js"></script>
+    </div>
+    </section>
+    
+    
+    <!-- <script src="asset/css/js/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="asset/css/js/jquery.js"></script>
+    <script src="asset/css/js/popper.min.js"></script>
+    <script src="asset/css/js/bootstrap.min.js"></script>
 </body>
 </html>
