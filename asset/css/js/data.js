@@ -18,7 +18,7 @@ var database={
         },
     },
     "feature":[
-        ["fas fa-award fa-3x","Di Jamin Kasiliannya","Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt, voluptates rem corrupti necessitatibus at sit sapiente optio error, atque fugiat cupiditate quos. Corrupti velit rem repellendus nihil minus placeat?"],
+        ["fas fa-award fa-3x","Di Jamin Keasiliannya","Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt, voluptates rem corrupti necessitatibus at sit sapiente optio error, atque fugiat cupiditate quos. Corrupti velit rem repellendus nihil minus placeat?"],
         ["fas fa-landmark fa-3x","Di Jamin Barang Asli","Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor illo alias amet ad quae temporibus officia laboriosam officiis ipsam doloribus vitae in nostrum enim corporis quasi aperiam, sint cupiditate eius!"],
         ["fas fa-lock fa-3x","Di Jamin Barang Asli","Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium quae quod vitae laboriosam nemo! Ducimus, placeat! Molestiae quo aperiam officiis id voluptatibus, illum iusto dolores pariatur natus a! Esse, exercitationem?"]
     ]
